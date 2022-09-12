@@ -26,7 +26,7 @@ class Square extends Shape {
     }
 }
 
-/* class Circle implements Shape {
+/* class Circle extends Shape {
     int width;
     int y;
     void area(int y) {
@@ -34,3 +34,17 @@ class Square extends Shape {
         System.out.println(area);
     }
 } */
+
+
+/* 
+
+javac /tmp/JpOCIZ5PGc/Shapes.java
+/tmp/JpOCIZ5PGc/Program.java:24: error: Square is not abstract and does not override abstract method area() in Shape
+class Square extends Shape {
+^
+/tmp/JpOCIZ5PGc/Shapes.java:26: error: method does not override or implement a method from a supertype
+    @Override public void area(int x) {
+    ^
+2 errors
+
+*/
